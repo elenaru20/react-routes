@@ -5,22 +5,22 @@ changing the browser URL, modifying the browser history, and keeping the UI stat
 # React Router
 The React Router is based on three main components:
 
-<Router> - This component keeps the User Interface in sync with the URL,
-<Link> - Renders a navigation link. (basically an <a> tag, but they change the URL without refreshing the page),
-<Route> - Renders a UI component depending on the URL.
+`<Router>` - This component keeps the User Interface in sync with the URL,
+`<Link> `- Renders a navigation link. (basically an <a> tag, but they change the URL without refreshing the page),
+`<Route> `- Renders a UI component depending on the URL.
 The first thing we need to do is to choose a router implementation; for web applications, we have two options:
 
-<BrowserRouter> - Uses the HTML5 History API*,
-<HashRouter> - Uses the hash portion of the URL. (Only for older browsers that don’t support the HTML5 History API, so let’s focus on the <BrowserRouter>)
+`<BrowserRouter>` - Uses the HTML5 History API*,
+`<HashRouter>` - Uses the hash portion of the URL. (Only for older browsers that don’t support the HTML5 History API, so let’s focus on the `<BrowserRouter>`)
 
 # Dynamic Routing
 When we say dynamic routing, we mean routing that takes place as your app is rendering.
 
-The main job of a <Router> component is to create a history object to keep track of the location(URL). 
+The main job of a `<Router>` component is to create a history object to keep track of the location(URL). 
 When the location changes because of a navigation action, the child component is re-rendered. 
-Most of the time, you’ll use a <Link> component to change the location.
+Most of the time, you’ll use a `<Link>` component to change the location.
 
-<Switch> returns only the first matching route.
+`<Switch>` returns only the first matching route.
 
 
 ---------------------------------------
